@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+
+@layer base {
+	body {
+		@apply font-barlow text-[#12151b];
+	}
+
+	h1 {
+		@apply text-5xl font-bold;
+	}
+
+	h3 {
+		@apply text-3xl;
+	}
+
+	h4 {
+		@apply text-2xl;
+	}
+
+	h5 {
+		@apply text-base;
+	}
+}
+
+@layer components {
+	.btn {
+		@apply bg-[#e60278] text-white h-[34px] px-[13px] py-[6px] rounded text-base font-semibold cursor-pointer hover:bg-[#860146];
+	}
+
+	.card {
+		@apply rounded-md shadow-md relative overflow-hidden hover:shadow-lg;
+	}
+
+	/* .badge {
+		@apply flex justify-between items-center rounded-md min-w-[25%];
+	} */
+}
